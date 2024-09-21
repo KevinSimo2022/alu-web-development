@@ -33,7 +33,8 @@ def login() -> str:
     return response
 
 
-@app_views.route('/auth_session/logout', methods=['DELETE'], strict_slashes=False)
+@app_views.route('/auth_session/logout', 
+                 methods=['DELETE'], strict_slashes=False)
 def logout() -> str:
     """ DELETE /api/v1/auth_session/logout
     Handles user logout and session destruction
